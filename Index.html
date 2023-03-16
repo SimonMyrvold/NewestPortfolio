@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Index.css">
+    <title>Simon Myrvold</title>
+</head>
+<body>
+
+    <div class="lightDarkMode" onclick="changeColor()">
+        <i class="fas fa-adjust"></i>
+        <h1>Dark Mode</h1>
+    </div>
+
+    <section class="SideNavbar">
+        <a href="#Start"><p class="linktext">Home</p></a>
+        <a href="#About"><p class="linktext">About</p></a>
+        <a href="#Portfolio"><p class="linktext">Portfolio</p></a>
+    </section>
+
+    <div id="page">
+        <section id="Start">
+            <div class="Navbar">
+                <a href="#Start"><p class="linktext">Home</p></a>
+                <a href="#About"><p class="linktext">About</p></a>
+                <a href="#Portfolio"><p class="linktext">Portfolio</p></a>
+            </div>
+            <div class="HamburgerMenu">
+                <div class="line" onclick="hamburger()">
+                    <hr class="line1">
+                    <hr class="line2">
+                    <hr class="line3">
+                </div>
+            </div>
+            <div class="hamburgerOpen">
+                <a href="#Start"><p class="linktext">Home</p></a>
+                <a href="#About"><p class="linktext">About</p></a>
+                <a href="#Portfolio"><p class="linktext">Portfolio</p></a>
+                <i onclick="changeColor()" class="fas fa-adjust"></i>
+            </div>
+            <div class="TitleName">
+                <h1>Simon Myrvold</h1>
+                <h2>Junior web developer from Lund, Sweden</h2>
+            </div>
+        </section>
+        
+        <section id="About">
+            <h1>About Me</h1>
+            <div class="AboutContent">
+                <div class="PictureDescription">
+                    <div class="Picture">
+                        <img src="img/profil.png" alt="Picture of me">
+                    </div>
+                    
+                    <div class="Description">
+                        <p>I'm a student from Lund, Sweden with an urge to create and explore on the web. I'm looking forward to the next couple of years ahead, both to learn and get experience with my end goal that is creating lasting friendships with the people I will be working with.</p>
+                    </div>
+                </div>
+                
+                <div class="ContactContent">
+                    
+                        <div class="PictureLink">
+                            <i class="SitePicture fab fa-twitter fa-7x"></i>
+                            
+                            <div class="SiteTitle">
+                                Twitter
+                            </div>
+                        </div>
+                        
+                        <div class="PictureLink">
+                        <i class="SitePicture fab fa-instagram fa-7x"></i>
+                        
+                        <div class="SiteTitle">
+                            Instagram
+                        </div>
+                        </div>
+
+                        <div class="PictureLink">
+                            <i class="SitePicture fab fa-linkedin fa-7x"></i>
+                            
+                            <div class="SiteTitle">
+                                Linkedin
+                            </div>
+                        </div>
+                        
+                        <div class="PictureLink">
+                            <i class="SitePicture fab fa-github fa-7x"></i>
+                            
+                            <div class="SiteTitle">
+                                Github
+                            </div>
+                            
+                        </div>                    
+                </div>
+                
+                <div class="EmailPhoneNumber">
+                    <div id="Email">
+                        <a href="mailto:simon.johan.myrvold@gmail.com"><h3 class="Email" style="color: #596E79;">simon.johan.myrvold@gmail.com</h3></a>
+                    </div>
+                    
+                    <div id="PhoneNumber">
+                        <h3>Phone number: 0723728322</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="SideBar">
+                
+            </div>
+        </section>
+
+        <section id="Portfolio">
+
+            <h1 class="PortfolioTitle">Portfolio</h1>
+
+        <div class="Portfolio">
+            <div id="PortfolioContent">
+                <div class="Project">
+                    <div class="ProjectPicture">
+                        
+                    </div>
+                    
+                    <div class="ProjectText">
+                        <h1>Project 1</h1>
+                        <p>Project description</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="PortfolioContent">
+                <div class="Project">
+                    <div class="ProjectPicture">
+                        
+                    </div>
+                    
+                    <div class="ProjectText">
+                        <h1>Project 1</h1>
+                        <p>Project description</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="PortfolioContent">
+                <div class="Project">
+                    <div class="ProjectPicture">
+                        
+                    </div>
+                    
+                    <div class="ProjectText">
+                        <h1>Project 1</h1>
+                        <p>Project description</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="PortfolioContent">
+                <div class="Project">
+                    <div class="ProjectPicture">
+                        
+                    </div>
+                    
+                    <div class="ProjectText">
+                        <h1>Project 1</h1>
+                        <p>Project description</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="PortfolioContent">
+                <div class="Project">
+                    <div class="ProjectPicture">
+                        
+                    </div>
+                    
+                    <div class="ProjectText">
+                        <h1>Project 1</h1>
+                        <p>Project description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    </div>
+<script src="Index.js"></script>
+</body>
+</html>

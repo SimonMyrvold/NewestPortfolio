@@ -1,0 +1,453 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F0ECE3;
+    font-family: "Noto Serif", serif;
+    color: #596E79;
+}
+
+a{
+    text-decoration: none;
+}
+
+.lightDarkMode{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    z-index: 1;
+    margin-left: 0.5rem;
+}
+
+.lightDarkMode i{
+    font-size: 2rem;
+    margin: auto;
+}
+
+.lightDarkMode h1{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.SideNavbar{
+    opacity: 0;
+    height:max-content;
+    z-index: 1;
+    margin:auto;
+    position:fixed;
+    top:0;bottom:0;
+    right:0;
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
+    transition: 1s;
+    visibility: hidden;
+}
+
+.SideNavbar p{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.SideNavbar.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.linktext{
+    font-size: 1.5rem;
+    color: rgb(22, 22, 22);
+}
+
+.linktext.dark{
+    color: #F0ECE3;
+}
+
+#Start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+    background-image: url(../img/BackgroundLight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+}
+
+.Navbar p:hover{
+    transition: 250ms;
+    color: #F0ECE3;
+    cursor: pointer;
+}
+
+.Navbar a{
+    text-decoration: none;
+}
+
+.Navbar.active{
+    visibility: hidden;
+}
+
+.HamburgerMenu{
+    visibility: hidden;
+    z-index: 2;
+    left: 0;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    position: fixed;
+    margin: auto;
+}
+
+.HamburgerMenu.active{
+    visibility: visible;
+}
+
+.line{
+    padding: 10px;
+}
+
+.line1{
+    transition: 500ms;
+}
+
+.line2{
+    transition: 500ms;
+}
+
+.line3{
+    transition: 500ms;
+}
+
+.line1.active{
+    rotate: 135deg;
+    transition: 500ms;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.line2.active{
+    rotate: 45deg;
+    transition: 500ms;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.line3.active{
+    transition: 500ms;
+    opacity: 0;
+}
+
+.line hr{
+    width: 35px;
+}
+
+.hamburgerOpen{
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    padding-top: 4rem;
+    padding-left: 1.5rem;
+    padding-right: 0.25rem;
+    background-color: lightgray;
+    overflow-x: auto;
+    animation: moveout 0.5s;
+    visibility: hidden;
+    transition: 500ms;
+}
+
+.hamburgerOpen i{
+    font-size: 2rem;
+    margin: auto;
+    padding-bottom: 1rem;
+    padding-left: 1.4rem;
+}
+
+.hamburgerOpen.active p{
+    font-size: 1.5rem;
+    color: rgb(22, 22, 22);
+}
+
+.hamburgerOpen.active{
+    visibility: visible;
+    animation: movein 0.5s ;
+    opacity: 1;
+    transition: 1s;
+}
+
+@keyframes movein{
+    from{left: -400px;}
+    to{left: 0px;}
+}
+
+@keyframes moveout{
+    from{left: 0px;}
+    to{left: -400px;}
+}
+
+.TitleName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+.TitleName h1{
+    font-size: 6rem;;
+}
+
+.TitleName h2{
+    font-size: 2.5rem;
+}
+
+#About{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: auto;
+}
+
+#About h1{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.AboutContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 13vh;
+}
+
+.PictureDescription{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 50%;
+}
+
+.Picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 50%;
+}
+
+.Description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.Picture img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+
+.ContactContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.PictureLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SitePicture{
+    font-size: 10rem;
+    transition: text-shadow 0.25s, color 0.25s;
+}
+  
+.SitePicture:hover {
+    transition: text-shadow 0.25s, color 0.25s;
+    text-shadow:10px 10px 10px #C7B198;
+}
+
+.SitePicture.dark:hover {
+    transition: text-shadow 0.25s, color 0.25s;
+    text-shadow:10px 10px 10px #000000;
+}
+
+.SiteTitle{
+    text-align: center;
+    font-size: 1rem;
+    text-align: center;
+    
+}
+
+.EmailPhoneNumber{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 403px;
+    gap: 10px;
+}
+
+#Email{
+    text-align: center;
+    font-size: 1rem;
+}
+
+#PhoneNumber{
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#Portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: auto;
+    padding-top: 10vh;
+}
+
+.PortfolioTitle{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.Portfolio{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20vh 0px;
+}
+
+#PortfolioContent{
+    width: calc(90%/3);
+    align-items: center;
+    padding: 0px 0px 100px;
+    gap: 50px;
+}
+
+.Project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+}
+
+.ProjectPicture{
+    display: flex;    
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    width: 250px;
+    height: 250px;
+    background: #000000;
+}
+
+.ProjectText{
+    text-align: center;
+    font-size: 1rem;
+}
+
+#page{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .Portfolio{
+        width: 100%;
+    }
+
+    #PortfolioContent{
+        width: 38%;
+    }
+
+    .ContactContent{
+        gap: 0;
+    }
+
+    .PictureLink{
+        padding-top: 4rem;
+        flex: 50%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .lightDarkMode{
+        display: none;
+    }
+
+    .SideNavbar{
+        display: none;
+    }
+
+    #PortfolioContent{
+        width: 100%;
+    }
+
+    .ContactContent{
+        gap: 0;
+    }
+
+    .SitePicture{
+        font-size: 7rem;
+    }
+
+    .PictureDescription{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Description{
+        width: 50%;
+    }
+
+    .TitleName h1{
+        font-size: 5rem;;
+        text-align: center;
+    }
+    
+    .TitleName h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+}
